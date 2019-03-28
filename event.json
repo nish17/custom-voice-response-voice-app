@@ -1,0 +1,154 @@
+{
+    "responseId": "bce67a21-e623-436e-ae40-e1c44226c8c2",
+    "queryResult": {
+        "queryText": "next lecture please?",
+        "parameters": {
+            "typeOfClass": "Lecture"
+        },
+        "allRequiredParamsPresent": true,
+        "fulfillmentMessages": [
+            {
+                "platform": "ACTIONS_ON_GOOGLE",
+                "suggestions": {
+                    "suggestions": [
+                        {
+                            "title": "May I alert you about it?"
+                        },
+                        {
+                            "title": "send notifications?"
+                        }
+                    ]
+                }
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/testtelephonyintent-followup",
+                "lifespanCount": 4,
+                "parameters": {
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            },
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/google_assistant_input_type_touch",
+                "parameters": {
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            },
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/actions_capability_screen_output",
+                "parameters": {
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            },
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/_actions_on_google",
+                "lifespanCount": 98,
+                "parameters": {
+                    "data": "{}",
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            },
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/actions_capability_audio_output",
+                "parameters": {
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            },
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/actions_capability_media_response_audio",
+                "parameters": {
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            },
+            {
+                "name": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8/contexts/actions_capability_web_browser",
+                "parameters": {
+                    "typeOfClass.original": "lecture",
+                    "typeOfClass": "Lecture"
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/daily-schedule-a07e5/agent/intents/314c1076-4a92-48e1-b9f7-edf38d374555",
+            "displayName": "nextLectureIntent"
+        },
+        "intentDetectionConfidence": 1,
+        "languageCode": "en-us"
+    },
+    "originalDetectIntentRequest": {
+        "source": "google",
+        "version": "2",
+        "payload": {
+            "isInSandbox": true,
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    },
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            },
+            "requestType": "SIMULATOR",
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "next lecture please?",
+                            "inputType": "TOUCH"
+                        }
+                    ],
+                    "arguments": [
+                        {
+                            "rawText": "next lecture please?",
+                            "textValue": "next lecture please?",
+                            "name": "text"
+                        }
+                    ],
+                    "intent": "actions.intent.TEXT"
+                }
+            ],
+            "user": {
+                "userStorage": "{\"data\":{\"class\":\"ICT16\"}}",
+                "lastSeen": "2018-11-29T02:49:31Z",
+                "locale": "en-US",
+                "userId": "ABwppHFVkRLTDlTWdxY5b1UZAEUvfZ5UAJ1-ISszJvzu6r1GPeFhyCw5JwZzbKHXjZSXFNSwSjzIbCi4TyxM-Zip0dI"
+            },
+            "conversation": {
+                "conversationId": "ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8",
+                "type": "ACTIVE",
+                "conversationToken": "[\"_actions_on_google\",\"testtelephonyintent-followup\"]"
+            },
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.WEB_BROWSER"
+                        },
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "session": "projects/daily-schedule-a07e5/agent/sessions/ABwppHGKhC2mU-P6zRoBJhSb4e8VvW2TQ59-gvd4bpkGO_ntbbj2iJRuDfXibLXEs2nN-s2rgd7XUH_82IFjXV0-Fo8"
+}
