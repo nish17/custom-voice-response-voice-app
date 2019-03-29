@@ -17,7 +17,9 @@ app.intent("Default Welcome Intent", conv => {
         .getDownloadURL()
         .then(url => conv.ask(`<speak><audio src=${url}/></speak>`))
         .catch(e => {
+            console.log("````````````````````````````````````````````````````");
             console.log(e);
+            console.log("````````````````````````````````````````````````````");
         });
 });
 
