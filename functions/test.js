@@ -21,7 +21,9 @@ storage
 
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-admin.initializeApp(functions.config().firebase);
+const config = require("./config.js");
+// admin.initializeApp(functions.config().firebase);
+admin.initializeApp(config);
 const bucket = admin.storage().bucket();
 const bucketAccessConfig = {
     action: "read",
@@ -30,5 +32,18 @@ const bucketAccessConfig = {
 
 let intentName = "Default_Welcome_Intent";
 Path = `${intentName}/${Math.floor(Math.random() * 4) + 1}.ogg`;
+console.log(Path);
 const soundFileRef = bucket.file(Path);
-const [soundUrl] = soundFileRef.getSignedUrl(bucketAccessConfig);
+async function getURL() {
+    try {
+        await soundFileRef.getSignedURL(bucketAccessConfig, (err, url) => {
+            if (err) console.log(err);
+            else console.log(url);
+        });
+    } catch (err) {
+        console.log(err);
+    }
+}
+const soundUrl = getURL();
+// console.log(soundFileRef);
+// console.log(soundUrl);
